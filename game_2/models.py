@@ -109,6 +109,7 @@ class PlayerLevelPrizeManagerManager(models.Manager):
 class PlayerLevelManager(models.Manager):
     """Менеджер для работы с PlayerLevel."""
 
+    @staticmethod
     def export_csv():
         """Метод генерирует и возвращает streaming response с CSV-данными."""
         level_prizes = {
